@@ -1,0 +1,7 @@
+gcc -o test_build/m_net.o -c ../src/m_http/m_net/m_net.c
+gcc -o test_build/m_url_process.o -c ../src/m_http/m_url_process/m_url_process.c
+gcc -o test_build/m_socks5.o -c ../src/m_http/m_socks5/m_socks5_client.c
+gcc -o test_build/m_http.o -c ../src/m_http/m_http.c
+gcc -o test_build/judge_Internet.o -c ../src/judge_Internet.c
+gcc -o test_build/test.o -c test_src/test__judge_Internet.c
+gcc -o test_bin/test__judge_Internet test_build/*
